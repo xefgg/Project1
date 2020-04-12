@@ -51,6 +51,8 @@ PJ1 实验报告
 
 可以看到，图片的下沿明显被裁剪掉了
 
+browse.html单独又设置了img-container和img的属性，同样传进去sample这张非正方形的图片，可以看到被成功剪裁成了正方形
+
 
 * 完成bonus 5.2
 
