@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Upload</title>
+    <link rel="stylesheet" type="text/css" href="css/reset.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/Upload.css">
+    <link rel="stylesheet" type="text/css" href="../font%20awesome/font-awesome/css/font-awesome.min.css">
+    <script type="text/javascript" src="JS/Upload.js"></script>
+</head>
+<body>
+<header>
+    <nav>
+        <div class="nav">
+            <ul>
+                <li><i class="fa fa-ravelry fa-3x" aria-hidden="true"></i></i></li>
+                <li><a class="navHome" href="../Index.html">Home</a></li>
+                <li><a href="Browser.html">Browse</a></li>
+                <li><a href="Search.html">Search</a></li>
+            </ul>
+        </div>
+        <div class="dropdown">
+            <button>My Account ▼</button>
+            <div class="dropdown-content">
+                <a href="Upload.html"><i class="fa fa-upload" aria-hidden="true"></i><span>Upload</span></a>
+                <a href="My%20photo.html"><i class="fa fa-picture-o" aria-hidden="true"></i><span>My photo</span></a>
+                <a href="Favor.html"><i class="fa fa-heart" aria-hidden="true"></i><span>Favor</span></a>
+                <a href="Log%20in.html"><i class="fa fa-sign-in" aria-hidden="true"></i><span>Log in</span></a>
+            </div>
+        </div>
+    </nav>
+</header>
+<div class="upload">
+    <p>Upload your picture</p>
+    <div class="picture">
+        <img src="" id="upPicture"><br>
+        <p id="hint">No picture uploaded</p>
+        <input type="file" id="picName" name="picName" onchange="uploadPic()"><br>
+    </div>
+</div>
+<div class="pictureInfo">
+    <div class="infoBlock">
+        <p>Picture title</p>
+        <input type="text" name="picTitle" class="inputBorder">
+    </div>
+</div>
+<div class="pictureInfo">
+    <div class="infoBlock">
+        <p>Picture descriptions</p>
+        <textarea name="picDescriptions" class="picDescription"></textarea>
+    </div>
+</div>
+<div class="pictureInfo">
+    <div class="infoBlock">
+        <p>Filmed Country</p>
+        <input type="text" name="picTitle" class="inputBorder">
+    </div>
+</div>
+<div class="pictureInfo">
+    <div class="infoBlock">
+        <p>Filmed City</p>
+        <input type="text" name="picTitle" class="inputBorder">
+    </div>
+</div>
+<button type="submit" name="upload" value="Upload" class="uploadBtn" onclick="submit()">Upload</button>
+<footer>
+    CopyRight @ 2018 Software School
+</footer>
+</body>
+</html>
